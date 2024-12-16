@@ -1,4 +1,16 @@
-/********* PROFILE SECTION *********/
+/********* HERO IMAGE *********/
+.card__hero-img-box {
+  background-image: url('../images/drawers.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20rem; /*200px*/
+}
+
+.hero__img {
+  width: 100%;
+}
+
+/********* PROFILE *********/
 .profile {
   display: flex;
   justify-content: flex-start;
