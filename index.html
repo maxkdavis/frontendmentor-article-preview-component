@@ -6,31 +6,47 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <title>Frontend Mentor | Article preview component</title>
   </head>
   <body>
     <main>
-      <header class="header">
-        <img src="images/drawers.jpg" alt="green dresser in front of a white brick wall " class="header__img" />
-      </header>
-      <section class="section__hero">
-        <div class="hero">
-          <h1 class="hero__heading-primary">
-            Shift the overall look and feel by adding these wonderful touches to furniture in your home
-          </h1>
-          <p class="hero__text">
-            Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve
-            got some simple tips to help you make any room feel complete.
-          </p>
+      <section class="section-card">
+        <div class="card__img-box">
+          <img src="images/drawers.jpg" alt="green dresser in front of a white brick wall" class="hero__img" />
         </div>
-        <div class="profile">
-          <img src="images/avatar-michelle.jpg" alt="profile headshot of Michelle Appleton" class="profile__img" />
-          <div class="profile__text">
-            <p>Michelle Appleton</p>
-            <p>28 Jun 2020</p>
+
+        <div class="card">
+          <div class="card__content">
+            <h1 class="heading-primary">
+              Shift the overall look and feel by adding these wonderful touches to furniture in your home
+            </h1>
+            <p class="card__description">
+              Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting.
+              I’ve got some simple tips to help you make any room feel complete.
+            </p>
           </div>
-          <img src="images/icon-share.svg" alt="" />
+          <div class="card__profile">
+            <div class="profile">
+              <div class="profile__img-box">
+                <img
+                  src="images/avatar-michelle.jpg"
+                  alt="profile headshot of Michelle Appleton"
+                  class="profile__img"
+                />
+              </div>
+              <div class="profile__text">
+                <p>Michelle Appleton</p>
+                <p>28 Jun 2020</p>
+              </div>
+              <button class="btn share-btn"><img src="images/icon-share.svg" alt="" /></button>
+            </div>
+          </div>
         </div>
       </section>
     </main>

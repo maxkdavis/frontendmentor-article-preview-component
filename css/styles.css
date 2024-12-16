@@ -1,0 +1,10 @@
+/********* PROFILE SECTION *********/
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 3.2rem;
+}
+.profile__img {
+  height: 4rem;
+  border-radius: 50%;
+}
