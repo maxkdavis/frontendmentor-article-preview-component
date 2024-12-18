@@ -28,7 +28,6 @@ body background: #ECF2F8
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* transition: all 0.5s; */
 }
 
 html {
@@ -54,14 +53,14 @@ body {
 .card {
   background-color: #fff;
   border-radius: 11px;
-  /* overflow: hidden; */ /*TURN BACK ON LATER*/
+  overflow: hidden;
   box-shadow: 0px 8px 24px rgba(195, 221, 246, 0.833);
   transition: all 0.4s;
 }
 
-/* .card:hover {
+.card:hover {
   transform: translateY(-1.2rem);
-} */
+}
 
 .container {
   display: flex;
@@ -107,9 +106,8 @@ body {
 /********* PROFILE *********/
 
 .card__profile {
-  /* position: relative; */
-  padding: 0 3.2rem 1.6rem;
-  outline: 1px dotted purple;
+  position: relative;
+  padding: 1.6rem 3.2rem;
 }
 
 .profile {
@@ -149,18 +147,10 @@ body {
   font-weight: 500;
 }
 
-/* TESTING */
-.card__profile {
-  position: relative;
-  transition: all 2s;
-}
-
-.profile {
-  background-color: orangered;
-}
-
+/* User Clicks 'Share' Button */
 .social-links-container {
-  background-color: greenyellow;
+  padding: 1.6rem 3.2rem;
+  background-color: #48556a;
   position: absolute;
   top: 0;
   left: 0;
@@ -168,6 +158,26 @@ body {
   height: 100%;
   transform: translateY(100%);
   display: none;
+}
+
+.flex-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  list-style-type: none;
+}
+
+.share-text {
+  color: #9daec2;
+  font-size: 1.3rem;
+  letter-spacing: 5px;
 }
 
 /* adding a class when button is clicked */
@@ -180,4 +190,10 @@ body {
   z-index: 9999;
 }
 
-/* Notes - need to fix it where instead of toggling .share-open */
+.btn-active {
+  background-color: #6e8098;
+}
+
+.btn-active svg path {
+  fill: #fff;
+}
