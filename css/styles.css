@@ -51,6 +51,7 @@ body {
 }
 
 .card {
+  display: grid;
   background-color: #fff;
   border-radius: 11px;
   overflow: hidden;
@@ -75,13 +76,20 @@ body {
 }
 
 /********* HERO IMAGE *********/
-.card__hero-img-box {
+.card__img-container {
+  height: 20rem;
+  width: 100%;
+  background: red;
   background-image: url('../images/drawers.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 20rem; /*200px*/
-  /* margin-bottom: 1.6rem; */
 }
+
+/* .card__hero-img-box {
+  background-image: url('../images/drawers.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
 
 .hero__img {
   width: 100%;

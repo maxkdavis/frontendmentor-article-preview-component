@@ -1,0 +1,11 @@
+/* Screensize greater than 496px */
+@media (min-width: 31em) {
+  .card {
+    max-width: 73rem;
+    grid-template-columns: 0.4fr 0.6fr;
+  }
+
+  .card__hero-img-box {
+    border: 1px solid red;
+  }
+}
